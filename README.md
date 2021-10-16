@@ -32,7 +32,10 @@ THEN I am taken to the corresponding section of the README
 ```
 The following video demonstrates the appearance and functionality:
 
-![]()
+
+
+
+https://user-images.githubusercontent.com/25469240/137593831-a5a41b15-d381-4a0f-ad5c-99af8319a076.mp4
 
 
 ## Technology
@@ -41,4 +44,4 @@ HTML,CSS,JavaScript,NodeJS(inquirer)
 ### Links 
 * [*GitHub repository*](https://github.com/daliyaebenny/ReadMe-Generator.git)   
 * [*Generated README file*](https://github.com/daliyaebenny/ReadMe-Generator/blob/main/result/README.md)
-* [*Walk through video*]()
+
