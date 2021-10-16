@@ -1,8 +1,8 @@
-# ReadME Generator
+# ReadME Generator 
   ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg) 
 
   ## Description 
-  Professional README Generator is a commandline application to generate README file for a project.This allows the project creator to devote more time to working on the project. 
+  A commandline application to generate ReadME files for projects
 
   ## Table of contents 
 
@@ -14,15 +14,15 @@
    * [Contact](#contact)
 
   ## Installation
-  npm init, npm i, node ./index.js
-  # License
+  The steps are npm init,npm i,node ./index.js 
+  ## License
     This project is licensed under the MIT license.
   ## Usage
-  To generate prodessional README file    
+  Application can be used to reduced the development time of projects as the developer can focus on Coding     
   ## Contributors
-  Daliya Benny    
+  Daliya BEnny    
   ## Test
-  Replicate using the insallation steps and test for various test cases.
+  Replicate the steps in the installation and test for various test scenarios
   ## Contact
   *Find me on GitHub*: [daliyaebenny](https://github.com/daliyaebenny)    
   *Email me with any questions*: daliyaebenny@gmail.com

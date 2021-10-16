@@ -24,7 +24,7 @@ function fetchData() {
       type: 'list',
       message: 'Choose a license for my application(Choose None if not in the list)',
       name: 'license',
-      choices: ['MIT', 'ISC', 'APACHE 2.0', 'None'],
+      choices: ['MIT', 'ISC', 'gpl', 'None'],
     },
     {
       type: 'input',

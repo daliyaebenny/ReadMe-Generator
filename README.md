@@ -32,7 +32,7 @@ THEN I am taken to the corresponding section of the README
 ```
 The following video demonstrates the appearance and functionality:
 
-![]()
+![Video](./assets/ReadME video.mp4)
 
 
 ## Technology
@@ -41,4 +41,4 @@ HTML,CSS,JavaScript,NodeJS(inquirer)
 ### Links 
 * [*GitHub repository*](https://github.com/daliyaebenny/ReadMe-Generator.git)   
 * [*Generated README file*](https://github.com/daliyaebenny/ReadMe-Generator/blob/main/result/README.md)
-* [*Walk through video*]()
+
