@@ -1,20 +1,17 @@
-// TODO: Include packages needed for this application
+// Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 const path = require('path');
 
-// TODO: Create an array of questions for user input
-const questions = [];
 
-// TODO: Create a function to write README file
+// function to write README file
 function writeToFile(fileName, data) {
- // return fs.writeFileSync(path.join(process.cwd(), fileName), data);
     fs.writeFile(fileName, data, (err) =>
     err ? console.log(err) : console.log('Successfully created Readme ')
  );
 }
-
+//function to fetch data using inquirer
 function fetchData() {
   inquirer
   .prompt([
@@ -32,12 +29,12 @@ function fetchData() {
     {
       type: 'input',
       name: 'description',
-      message: 'Description for your application',
+      message: 'Description for the application',
     },
     {
       type: 'input',
       name: 'installation',
-      message: 'Installation instruction for your application',
+      message: 'Installation instruction for the application',
     },
     {
       type: 'input',
@@ -67,11 +64,12 @@ function fetchData() {
   ])
   .then((data) => {
     console.log(data);
+    // To resolve the same file name issue(as this project has its own readme) created a folder resut for the generated readme.
     writeToFile('./result/README.md', generateMarkdown(data));
 
   });
 }
-// TODO: Create a function to initialize app
+//function to initialize app
 function init() {
   fetchData();
 }
