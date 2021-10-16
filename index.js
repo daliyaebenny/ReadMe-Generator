@@ -9,10 +9,10 @@ const questions = [];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
-    // fs.writeFile(fileName, data, (err) =>
-    // err ? console.log(err) : console.log('Successfully created Readme ')
- // );
+ // return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    fs.writeFile(fileName, data, (err) =>
+    err ? console.log(err) : console.log('Successfully created Readme ')
+ );
 }
 
 function fetchData() {
@@ -21,18 +21,48 @@ function fetchData() {
     {
       type: 'input',
       name: 'title',
-      message: 'What is the title of your Project?',
+      message: 'Title of your application ',
     },
     {
       type: 'list',
-      message: 'License',
+      message: 'Choose a license for my application(Choose None if not in the list)',
       name: 'license',
       choices: ['MIT', 'ISC', 'APACHE 2.0', 'None'],
     },
     {
       type: 'input',
       name: 'description',
-      message: 'What is the description of your Project?',
+      message: 'Description for your application',
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Installation instruction for your application',
+    },
+    {
+      type: 'input',
+      name: 'usageInfo',
+      message: 'Usage information of the application',
+    },
+    {
+      type: 'input',
+      name: 'contribution',
+      message: 'Contributors of the application',
+    },
+    {
+      type: 'input',
+      name: 'testInstructions',
+      message: 'Test Instructions of the application',
+    },
+    {
+      type: 'input',
+      name: 'githubUname',
+      message: 'Github username ',
+    },
+    {
+      type: 'input',
+      name: 'email',
+      message: 'Email address for communication',
     },
   ])
   .then((data) => {
